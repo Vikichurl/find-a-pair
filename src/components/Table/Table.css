@@ -1,0 +1,54 @@
+.container {
+    max-width: 978px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+}
+
+.table__rounds-counter {
+    font-size: 42px;
+    grid-area: col1;
+    margin-bottom: 0;
+}
+
+.table__game-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "col1 col1 col1" "col2 col3 col4";
+}
+
+.table__failed,
+.table__success {
+    font-size: 30px;
+}
+
+.table__failed {
+    grid-area: col2;
+    color: red;
+}
+
+.table__success {
+    grid-area: col4;
+    color: green;
+}
+
+.table__button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform .2s ease-in;
+    font-size: 30px;
+}
+
+.table__button:hover {
+    transform: scale(1.2);
+    text-decoration: underline;
+}

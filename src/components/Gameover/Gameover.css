@@ -1,0 +1,19 @@
+.gameover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.gameover__title {
+    position: relative;
+    font-size: 72px;
+    color: #ffffff;
+    z-index: 6;
+}

@@ -1,0 +1,43 @@
+.tile {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.tile__cover:hover {
+    transition: all .2s ease-in;
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+.tile_hide {
+    opacity: 0;
+    transition: all .2s ease-in;
+}
+
+.tile__img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.tile__cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: bisque;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+}
+
+.tile__cover_hide {
+    visibility: hidden;
+    opacity: 0;
+}
